@@ -1,7 +1,9 @@
 # Short Answer
 
 ## 1. In the following code sequence, show the value of AL after each shift or rotate instruction
+
 has executed:
+
 ```asm
 mov al,0D4h
 shr al,1 ; a.
@@ -16,6 +18,7 @@ rol al,1 ; d.
 다음 코드에서 각 시프트 또는 회전 명령어가 실행된 후 AL의 값을 구하시오.
 
 **답:**
+
 - **a. `AL = 6Ah`**
 - **b. `AL = EAh`**
 - **c. `AL = FDh`**
@@ -37,7 +40,9 @@ rol al,1 ; d.
 ---
 
 ## 2. In the following code sequence, show the value of AL after each shift or rotate instruction
+
 has executed:
+
 ```asm
 mov al,0D4h
 ror al,3 ; a.
@@ -54,6 +59,7 @@ rcr al,3 ; d.
 다음 코드에서 각 시프트 또는 회전 명령어가 실행된 후 AL의 값을 구하시오.
 
 **답:**
+
 - **a. `AL = 9Ah`**
 - **b. `AL = 6Ah`**
 - **c. `AL = A9h`**
@@ -77,6 +83,7 @@ rcr al,3 ; d.
 ---
 
 ## 3. What will be the contents of AX and DX after the following operation?
+
 ```asm
 mov dx,0
 mov ax,222h
@@ -87,6 +94,7 @@ mul cx
 다음 연산이 실행된 후 AX와 DX의 내용은 무엇인가?
 
 **답:**
+
 - **AX = `2200h`**
 - **DX = `0002h`**
 
@@ -103,6 +111,7 @@ mul cx
 ---
 
 ## 4. What will be the contents of AX after the following operation?
+
 ```asm
 mov ax,63h
 mov bl,10h
@@ -112,6 +121,7 @@ div bl
 다음 연산이 실행된 후 AX의 내용은 무엇인가?
 
 **답:**
+
 - **AX = `0306h`**
 - **AL = `06h` (몫)**
 - **AH = `03h` (나머지)**
@@ -129,6 +139,7 @@ div bl
 ---
 
 ## 5. What will be the contents of EAX and EDX after the following operation?
+
 ```asm
 mov eax,123400h
 mov edx,0
@@ -139,6 +150,7 @@ div ebx
 다음 연산이 실행된 후 EAX와 EDX의 내용은 무엇인가?
 
 **답:**
+
 - **EAX = `00012340h`**
 - **EDX = `00000000h`**
 
@@ -155,6 +167,7 @@ div ebx
 ---
 
 ## 6. What will be the contents of AX and DX after the following operation?
+
 ```asm
 mov ax,4000h
 mov dx,500h
@@ -179,6 +192,7 @@ div bx
 ---
 
 ## 7. What will be the contents of BX after the following instructions execute?
+
 ```asm
 mov bx,5
 stc
@@ -204,6 +218,7 @@ adc bx,ax
 ---
 
 ## 8. Describe the output when the following code executes in 64-bit mode:
+
 ```asm
 .data
 dividend_hi QWORD 00000108h
@@ -234,7 +249,9 @@ div divisor
 ---
 
 ## 9. The following program is supposed to subtract val2 from val1. Find and correct all logic
+
 errors (CLC clears the Carry flag):
+
 ```asm
 .data
 val1 QWORD 20403004362047A1h
@@ -296,7 +313,9 @@ top:
 ---
 
 ## 10. What will be the hexadecimal contents of RAX after the following instructions execute in
+
 64-bit mode?
+
 ```asm
 .data
 multiplicand QWORD 0001020304050000h
