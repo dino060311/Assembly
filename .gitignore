@@ -2,3 +2,29 @@
 *.obj
 *.exe
 *.pdb
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build folders
+**/Debug/
+**/Release/
+**/x86/
+**/x64/
+
+# Build files
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.idb
+*.log
+*.tlog/
+*.lastbuildstate
+*.recipe
+*.obj.dt.*
+
+# Intermediate files
+ipch/
